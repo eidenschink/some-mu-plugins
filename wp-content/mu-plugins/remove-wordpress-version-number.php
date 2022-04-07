@@ -9,6 +9,7 @@ add_filter( 'the_generator', '__return_null'  );
 
 add_action( 'init', function() {
 	remove_action( 'wp_head', 'wp_generator' );
+	// themes might add generator info, too. this removes the Gen from Total WordPress Theme:
 	remove_action( 'wp_head', 'wpex_theme_meta_generator', 1 );
 }, 10 );
 
