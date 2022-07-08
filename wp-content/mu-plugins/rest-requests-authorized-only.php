@@ -17,11 +17,11 @@ add_filter(
 			 */
 
 			/** Allow FacetWP calls */
-			if ( strpos( $req_uri, '/wp-json/facetwp/v1/refresh' ) >= 0 ) {
+			if ( false !== strpos( $req_uri, '/wp-json/facetwp/v1/refresh' ) ) {
 				return $result;
 			}
 			/** Allow Contact Form 7 calls */
-			if ( strpos( $req_uri, '/wp-json/contact-form-7/' ) >= 0 ) {
+			if ( false !== strpos( $req_uri, '/wp-json/contact-form-7/' ) ) {
 				return $result;
 			}
 		}
