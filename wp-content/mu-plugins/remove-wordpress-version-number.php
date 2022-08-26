@@ -1,3 +1,4 @@
+<?php
 /**
  * Security by obscurity:
  * Try to hide obvious hints about the WordPress release.
