@@ -24,6 +24,10 @@ add_filter(
 			if ( false !== strpos( $req_uri, '/wp-json/contact-form-7/' ) ) {
 				return $result;
 			}
+			/** Allow Borlabs Cookie calls */
+			if ( false !== strpos( $req_uri, '/wp-json/borlabs-cookie/' ) ) {
+				return $result;
+			}
 		}
 
 		if ( ! is_user_logged_in() ) {
